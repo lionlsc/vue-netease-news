@@ -1,0 +1,75 @@
+html,body{
+  overflow-x: hidden;
+}
+[v-cloak]{
+  display: none
+}
+.content{
+  margin-bottom: 80px;
+}
+.user-poster {
+  width: 100%;
+  height: 53vw;
+  display: block;
+}
+.user-group {
+  margin-bottom: 15px;
+}
+.user-links {
+  padding: 15px 0;
+  font-size: 12px;
+  text-align: center;
+  background-color: #fff;
+}
+.van-icon {
+  display: block;
+  font-size: 24px;
+}
+.button-area{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.button-area button{
+  background-color: #ee1a1a;
+  color: #fff;
+}
+.pointer{
+  cursor: pointer;
+}
+.video-warp{
+  display: flex;
+  height: 315px;
+  position: relative;
+  cursor: pointer;
+}
+.video-warp .cover{
+  width: 100%;
+  height: 315px;
+  position: absolute;
+  transition: all 1s;
+}
+.video-warp .icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.video-warp .title{
+  height: 50px;
+  line-height: 25px;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.opacity{
+  opacity: 0;
+  transition: all 2s;
+}
+html,body,#app{
+  height: 100%;
+}
