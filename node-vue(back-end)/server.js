@@ -16,6 +16,7 @@ app.use(function (req,res,next) {
 app.post("/api/news",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -28,6 +29,7 @@ app.post("/api/news",function (req,res) {
 app.post("/api/amuse",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -40,6 +42,7 @@ app.post("/api/amuse",function (req,res) {
 app.post("/api/sport",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -52,6 +55,7 @@ app.post("/api/sport",function (req,res) {
 app.post("/api/finance",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -64,6 +68,7 @@ app.post("/api/finance",function (req,res) {
 app.post("/api/war",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -76,6 +81,7 @@ app.post("/api/war",function (req,res) {
 app.post("/api/tech",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -88,6 +94,7 @@ app.post("/api/tech",function (req,res) {
 app.post("/api/mobile",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -100,6 +107,7 @@ app.post("/api/mobile",function (req,res) {
 app.post("/api/digital",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -112,6 +120,7 @@ app.post("/api/digital",function (req,res) {
 app.post("/api/fasion",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -124,6 +133,7 @@ app.post("/api/fasion",function (req,res) {
 app.post("/api/game",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -136,6 +146,7 @@ app.post("/api/game",function (req,res) {
 app.post("/api/edu",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -147,6 +158,7 @@ app.post("/api/edu",function (req,res) {
 app.post("/api/health",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -159,6 +171,7 @@ app.post("/api/health",function (req,res) {
 app.post("/api/travel",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -168,10 +181,10 @@ app.post("/api/travel",function (req,res) {
     })
 
 })      /*旅游版块对应接口*/
-
 app.get("/api/hotwords",function (req,res) {
     let chunk="";
     https.get('https://c.m.163.com/nc/search/hotWord.html',function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -183,6 +196,7 @@ app.get("/api/hotwords",function (req,res) {
 app.post("/api/search",function (req,res) {
     let chunk="";
     https.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -194,6 +208,7 @@ app.post("/api/search",function (req,res) {
 app.post("/api/video",function (req,res) {
     let chunk="";
     http.get(req.body.requestUri,function (response) {
+		response.setEncoding("utf8");
         response.on("data",function (data) {
             chunk+=data;
         });
@@ -204,4 +219,3 @@ app.post("/api/video",function (req,res) {
 })
 
 app.listen(5000)
-
